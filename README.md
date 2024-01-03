@@ -1,7 +1,5 @@
 # ToDoList
 
-# ToDoList
-
 ## 1. Présentation du Projet :
 
 L'application de gestion de tâches vise à offrir aux utilisateurs une plateforme conviviale et efficace pour organiser, suivre et gérer leurs tâches quotidiennes ou professionnelles. Elle aspire à simplifier la gestion des activités en permettant la création, l'attribution et le suivi des tâches, tout en intégrant des fonctionnalités avancées pour améliorer la productivité. 
