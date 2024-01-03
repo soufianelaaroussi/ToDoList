@@ -1,5 +1,5 @@
 # ToDoList
-Projet De Classe.
+
 # ToDoList
 
 ## 1. Présentation du Projet :
