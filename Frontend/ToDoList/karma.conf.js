@@ -3,8 +3,11 @@
 
 module.exports = function(config) {
   config.set({
-
-    // base path that will be used to resolve all patterns (eg. files, exclude)
+    frameworks: ['jasmine'],
+    files: [
+      'chemin/vers/vos/fichiers/source/**/*.js',
+      'chemin/vers/vos/fichiers/test/**/*.spec.js'
+    ],
     basePath: '',
 
 
@@ -18,7 +21,7 @@ module.exports = function(config) {
     ],
 
 
-    // list of files / patterns to exclude
+    // list of files / patterns to excludenpm install karma-jasmine jasmine-core karma-chrome-launcher karma-angular-preprocessor --save-dev
     exclude: [
     ],
 
