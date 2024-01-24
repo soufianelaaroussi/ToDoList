@@ -7,8 +7,8 @@ class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length = 200)
     description = models.TextField(null=True, blank=True)
-    complete = models.BooleanField(default=False)
     create = models.DateTimeField(null=True, blank=True)
+    complete = models.BooleanField(default=False)
  
  
     def __str__(self):
