@@ -4,15 +4,19 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { AddtaskComponent } from './task/addtask/addtask.component';
 import { UpdatetaskComponent } from './task/updatetask/updatetask.component';
-import { MytaskslistComponent } from './task/mytaskslist/mytaskslist.component';
 import { TaskComponent } from './task/task.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 const routes: Routes = [
-  { path: 'signin', component: SigninComponent },
-  { path: 'signup', component: SignupComponent },
+  { path: '', component: HomepageComponent, title: 'Welcome To ToDoList' },
+  { path: 'errorpage', component: ErrorpageComponent, title: 'Error 404!' },
+  { path: 'signin', component: SigninComponent, title: 'Sign-in' },
+  { path: 'signup', component: SignupComponent, title: 'Sign-up' },
   {
     path: 'task',
     component: TaskComponent,
+    title: 'Your Tasks List',
     children: [
       {
         path: 'addtask',
@@ -23,11 +27,6 @@ const routes: Routes = [
         path: 'updatetask',
         title: 'Update Task',
         component: UpdatetaskComponent,
-      },
-      {
-        path: 'taskslist',
-        title: 'My Tasks List',
-        component: MytaskslistComponent,
       },
     ],
   },

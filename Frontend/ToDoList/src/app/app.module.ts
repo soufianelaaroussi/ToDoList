@@ -7,7 +7,11 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { AddtaskComponent } from './task/addtask/addtask.component';
 import { UpdatetaskComponent } from './task/updatetask/updatetask.component';
-import { MytaskslistComponent } from './task/mytaskslist/mytaskslist.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,14 +20,22 @@ import { MytaskslistComponent } from './task/mytaskslist/mytaskslist.component';
     SigninComponent,
     AddtaskComponent,
     UpdatetaskComponent,
-    MytaskslistComponent
+    HomepageComponent,
+    ErrorpageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
-    provideClientHydration()
+    {
+      provide: HttpClient,
+      useClass: HttpClient,
+      deps: [],
+    },
   ],
   bootstrap: [AppComponent]
 })
