@@ -74,6 +74,8 @@ footer a.activebutton {
 
 .copyright {
   text-align: right;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #000;
-  text-align-last: right;
+  padding-right: 10px;
 }
