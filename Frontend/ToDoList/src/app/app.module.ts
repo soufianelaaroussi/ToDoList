@@ -8,7 +8,6 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { AddtaskComponent } from './task/addtask/addtask.component';
 import { UpdatetaskComponent } from './task/updatetask/updatetask.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -21,7 +20,6 @@ import { CommonModule } from '@angular/common';
     AddtaskComponent,
     UpdatetaskComponent,
     HomepageComponent,
-    ErrorpageComponent,
   ],
   imports: [
     BrowserModule,

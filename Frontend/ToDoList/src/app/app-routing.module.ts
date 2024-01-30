@@ -6,11 +6,9 @@ import { AddtaskComponent } from './task/addtask/addtask.component';
 import { UpdatetaskComponent } from './task/updatetask/updatetask.component';
 import { TaskComponent } from './task/task.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent, title: 'Welcome To ToDoList' },
-  { path: 'errorpage', component: ErrorpageComponent, title: 'Error 404!' },
   { path: 'signin', component: SigninComponent, title: 'Sign-in' },
   { path: 'signup', component: SignupComponent, title: 'Sign-up' },
   {
