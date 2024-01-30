@@ -1,10 +1,10 @@
 <nav>
   <div class="navbar-left">
-    <a class="home" routerLink="/homepage" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Home</a>
+    <a class="button" routerLink="" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Home</a>
   </div>
   <div class="navbar-right">
-    <a class="button" routerLink="/signin" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Sign In</a>
-    <a class="button" routerLink="/signup" routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Sign Up</a>
+    <a class="button" routerLink="/signin" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Login</a>
+    <a class="button" routerLink="/signup" routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Register</a>
   </div>
 </nav>
 
@@ -15,3 +15,8 @@
   <a href="X" target="_blank"><i class="fab fa-twitter"></i></a>
   <a href="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
 </footer>
+<footer class="copyright">
+  <p>&copy; ToDoList 2024 </p>
+</footer>
+
+<router-outlet></router-outlet>

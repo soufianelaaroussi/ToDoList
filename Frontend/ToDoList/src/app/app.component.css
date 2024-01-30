@@ -31,19 +31,19 @@ nav a {
 
 nav a:hover {
   background-color: #000;
-  color: #5e5e5e;
+  color: #ffffff;
 }
 
 nav a.activebutton {
   background-color: #000;
-  color: #5e5e5e;
+  color: #ffffff;
 }
 
 footer {
   text-align: center;
-  padding: #5e5e5e;
+  padding: #ffffff;
   background: none;
-  color: #5e5e5e;
+  color: #ffffff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -64,10 +64,16 @@ footer a {
 }
 footer a:hover {
   background-color: #000;
-  color: #5e5e5e;
+  color: #ffffff;
 }
 
 footer a.activebutton {
   background-color: #000;
-  color: #5e5e5e;
+  color: #ffffff;
+}
+
+.copyright {
+  text-align: right;
+  color: #000;
+  text-align-last: right;
 }

@@ -8,7 +8,7 @@ import { TaskComponent } from './task/task.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent, title: 'Welcome To ToDoList' },
+  { path: '', component: HomepageComponent, title: 'ToDoList' },
   { path: 'signin', component: SigninComponent, title: 'Sign-in' },
   { path: 'signup', component: SignupComponent, title: 'Sign-up' },
   {
