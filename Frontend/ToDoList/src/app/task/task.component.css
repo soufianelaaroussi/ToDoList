@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.todolist-container {
+  background-color: rgba(238, 238, 238, 0.11);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: auto;
+  margin-top: 15vh; /* Ajustez la marge supérieure selon vos besoins */
+  backdrop-filter: blur(20px);
+}
+
+.todolist-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.taskCheckbox {
+  margin-right: 10px;
+  appearance: none; /* Remove default appearance */
+  width: 20px; /* Set width of the checkbox */
+  height: 20px; /* Set height of the checkbox */
+  border: 2px solid #000000; /* Border color of the checkbox */
+  border-radius: 5px; /* Border radius to round the edges */
+  display: inline-block;
+  position: relative;
+}
+
+/* Style for the checked state of the checkbox */
+.taskCheckbox:checked {
+  background-color: #000000; /* Background color when checked */
+  border-color: #000000; /* Border color when checked */
+}
+
+/* Style for the checkmark inside the checkbox */
+.taskCheckbox:after {
+  content: '\2713'; /* Unicode character for checkmark */
+  font-size: 14px; /* Set the font size of the checkmark */
+  color: #fff; /* Color of the checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide the checkmark by default */
+}
+
+/* Style for the checked state of the checkmark */
+.taskCheckbox:checked:after {
+  display: block; /* Show the checkmark when checked */
+}
+
+.addButton,
+.deleteButton,
+.editButton {
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.addButton,
+.deleteButton:hover,
+.editButton:hover {
+  background-color: #fdfdfdb4;
+  color: black;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.actionButtons button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.actionButtons button:hover {
+  background-color: #fdfdfdb4;
+  color: black;
+}

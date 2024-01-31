@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.addTask-container {
+  background-color: rgba(238, 238, 238, 0.11);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px; /* Ajustez la largeur maximale selon vos besoins */
+  margin: auto;
+  margin-top: 15vh; /* Ajustez la marge supérieure selon vos besoins */
+  backdrop-filter: blur(20px);
+}
+
+.addTask-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.addTask-form {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #000000;
+  width: 100%;
+}
+
+.addTask-form label {
+  margin-bottom: 15px;
+}
+
+.taskInput {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.taskCheckbox {
+  margin-right: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.taskCheckbox:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.taskCheckbox:after {
+  content: '\2713';
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.taskCheckbox:checked:after {
+  display: block;
+}
+
+.addTaskButton {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.addTaskButton:hover {
+  background-color: #fdfdfdb4;
+  color: black;
+}

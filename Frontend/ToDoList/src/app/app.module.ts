@@ -5,12 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
-import { AddtaskComponent } from './task/addtask/addtask.component';
-import { UpdatetaskComponent } from './task/updatetask/updatetask.component';
+import { AddtaskComponent } from './addtask/addtask.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { EdittaskComponent } from './edittask/edittask.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { CommonModule } from '@angular/common';
     SignupComponent,
     SigninComponent,
     AddtaskComponent,
-    UpdatetaskComponent,
     HomepageComponent,
+    EdittaskComponent,
   ],
   imports: [
     BrowserModule,
