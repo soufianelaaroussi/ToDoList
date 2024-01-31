@@ -39,10 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'base.apps.BaseConfig',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+LOGIN_URL = 'api/auth/login/'
+
+AUTH_USER_MODEL = 'base.CustomUser'
+
+LOGIN_REDIRECT_URL = '/api/base/'
 
 LOGOUT_REDIRECT_URL = 'api/signin/'
 
