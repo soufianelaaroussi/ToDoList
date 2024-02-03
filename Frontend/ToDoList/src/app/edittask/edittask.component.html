@@ -1,5 +1,14 @@
+<nav>
+  <div class="navbar-left">
+  </div>
+  <div class="navbar-right">
+    <a class="button"><i class="fas fa-cog"></i> Settings</a>
+    <a class="button" href="/signin"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+</nav>
+
 <div class="editTask-container">
-  <h2>Edit Task</h2>
+  <h2>Modify Your Task Here !</h2>
   <form class="editTask-form">
     <label for="taskName">Task:</label>
     <input
@@ -15,10 +24,7 @@
     ></textarea>
     <label for="taskDate">Modification Date:</label>
     <input type="date" id="taskDate" class="taskInput" />
-    <label>
-      <input type="checkbox" class="taskCheckbox" />
-      Completed
-    </label>
+    <label> <input type="checkbox" class="taskCheckbox" /> Completed</label>
 
     <button type="button" class="editTaskButton">Save Changes</button>
   </form>

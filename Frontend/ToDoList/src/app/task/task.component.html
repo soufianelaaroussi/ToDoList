@@ -1,5 +1,15 @@
+<nav>
+  <div class="navbar-left">
+  </div>
+  <div class="navbar-right">
+    <a class="button"><i class="fas fa-archive"></i> Archived</a>
+    <a class="button"><i class="fas fa-cog"></i> Settings</a>
+    <a class="button" href="/signin"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+</nav>
+
 <div class="todolist-container">
-  <h2>Welcome, Your Tasks List</h2>
+  <h2><i class="fas fa-star"></i> Welcome, Your Task List !</h2>
   <ul id="taskList">
     <li class="taskItem">
       <input type="checkbox" class="taskCheckbox" />
@@ -25,8 +35,8 @@
     <!-- Ajoutez d'autres éléments li pour chaque tâche -->
   </ul>
   <div class="actionButtons">
-    <button class="addButton" routerLink="addtask" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Add</button>
-    <button class="editButton" routerLink="updatetask" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Edit</button>
-    <button class="deleteButton">Remove</button>
+    <button class="addButton" href ="/add"><i class="fas fa-plus"></i> Add</button>
+    <button class="editButton" href ="/edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+    <button class="deleteButton"><i class="fas fa-trash-alt"></i> Remove</button>
   </div>
 </div>
