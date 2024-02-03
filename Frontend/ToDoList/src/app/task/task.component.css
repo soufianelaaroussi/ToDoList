@@ -76,6 +76,10 @@ body {
   display: block; /* Show the checkmark when checked */
 }
 
+.taskStatus {
+  color: #000000;
+}
+
 .addButton,
 .deleteButton,
 .editButton {
